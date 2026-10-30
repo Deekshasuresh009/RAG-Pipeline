@@ -1,0 +1,57 @@
+# ==============================================================================
+# Aventro Motors RAG Phase 1 - .gitignore
+# ==============================================================================
+
+# 1. Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# 2. Python Bytecode and Runtime Caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+.Python
+
+# 3. Local Vector Database (ChromaDB persistent storage)
+chroma_db/
+chroma/
+*.chroma
+*.parquet
+
+# 4. Model Caches & Hugging Face Weights
+model_cache/
+.cache/
+hf_cache/
+models/
+huggingface/
+checkpoints/
+
+# 5. Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+
+# 6. Generated Artifacts & Evaluation Outputs
+output/
+evaluation_results/
+benchmark_results/
+artifacts/
+*.log
+
+# 7. Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 8. Operating System & Editor Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+.vscode/
+.idea/
+*.swp

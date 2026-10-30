@@ -1,0 +1,30 @@
+# Aventro Motors RAG - Phase 1 Dependencies
+# Only includes dependencies needed for Markdown processing, CSV handling, local embeddings, ChromaDB, and testing.
+# No Ollama, no OpenAI/cloud LLM APIs.
+
+# 1. Markdown Processing & Chunking
+langchain-text-splitters>=0.2.0
+markdown>=3.6
+
+# 2. CSV Handling & Data Processing
+pandas>=2.2.0
+
+# 3. Local Embeddings (Runs locally without external APIs or Ollama)
+sentence-transformers>=3.0.0
+torch>=2.2.0
+
+# 4. Vector Database (Local storage)
+chromadb>=0.5.0
+
+# 5. Testing & Validation
+pytest>=8.0.0
+
+# 6. Phase 2 Lexical / Keyword Retrieval
+rank-bm25>=0.2.2
+
+# 7. Phase 2 LangGraph Orchestration
+langgraph>=0.2.0
+
+# 8. Phase 2 Step 14: RAG Evaluation Framework
+ragas>=0.1.0,<0.3.0
+
